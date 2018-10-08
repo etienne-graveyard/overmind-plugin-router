@@ -1,0 +1,45 @@
+{
+  "name": "overmind-plugin-router",
+  "version": "0.0.0-development",
+  "description": "Router for overmind using overmind-plugin",
+  "main": "dist/overmind-plugin-router.js",
+  "module": "dist/overmind-plugin-router.mjs",
+  "types": "dist/index.d.ts",
+  "source": "src/index.ts",
+  "scripts": {
+    "build": "microbundle --format es,cjs",
+    "dev": "microbundle  --format es,cjs watch",
+    "prepare": "yarn build",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "travis-deploy-once": "travis-deploy-once",
+    "semantic-release": "semantic-release"
+  },
+  "files": [
+    "src",
+    "dist"
+  ],
+  "repository": "git+https://github.com/etienne-dldc/overmind-plugin-router.git",
+  "keywords": [],
+  "author": "Etienne Dldc <e.deladonchamps@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/etienne-dldc/overmind-plugin-router/issues"
+  },
+  "homepage": "https://github.com/etienne-dldc/overmind-plugin-router#readme",
+  "devDependencies": {
+    "@types/jest": "^23.3.3",
+    "cz-customizable": "^5.2.0",
+    "jest": "^23.6.0",
+    "microbundle": "^0.6.0",
+    "semantic-release": "^15.9.17",
+    "ts-jest": "^23.10.4",
+    "typescript": "^3.1.1",
+    "travis-deploy-once": "^5.0.9"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-customizable"
+    }
+  }
+}
