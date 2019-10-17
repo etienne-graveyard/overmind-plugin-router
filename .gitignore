@@ -106,3 +106,9 @@ typings/
 
 
 # End of https://www.gitignore.io/api/node,macos
+
+# Dist
+dist
+
+# cache
+.rpt2_cache
